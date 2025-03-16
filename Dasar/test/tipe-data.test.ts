@@ -7,5 +7,9 @@ describe("data type", () => {
     console.info(name);
     console.info(balance);
     console.info(isVip);
+
+    // name = 1;
+    // balance = "1000";
+    // isVip = 1;
   });
 });
