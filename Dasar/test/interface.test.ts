@@ -163,4 +163,19 @@ describe("Interface", () => {
     expect(A(1)).toBe(10);
     expect(A("Hello World")).toBe("Hello World");
   });
+
+  it("should function as parameter", () => {
+    function sayHello(name: string, filter: (name: string) => string): string {
+      return `Hello, ${filter(name)}`;
+    }
+
+    function toUpperCase(name: string): string {
+      return name.toUpperCase();
+    }
+
+    console.info(toUpperCase("Hello"));
+    console.info(
+      sayHello("Elmo", (name: string): string => name.toUpperCase()),
+    );
+  });
 });
