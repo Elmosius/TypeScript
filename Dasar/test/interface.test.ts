@@ -84,4 +84,23 @@ describe("Interface", () => {
 
     console.info(person.greet());
   });
+
+  it("should support intersection interface", () => {
+    interface A {
+      a: string;
+    }
+
+    interface B {
+      b: string;
+    }
+
+    type C = A & B;
+
+    const c: C = {
+      a: "a",
+      b: "b",
+    };
+
+    console.info(c);
+  });
 });
