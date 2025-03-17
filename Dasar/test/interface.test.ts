@@ -66,4 +66,22 @@ describe("Interface", () => {
     console.info(Udin);
     console.info(Elmo);
   });
+
+  it("should support function interface atr", () => {
+    interface Person {
+      name: string;
+      age: number;
+      greet(): string;
+    }
+
+    const person: Person = {
+      name: "John Doe",
+      age: 30,
+      greet() {
+        return `Hello, my name is ${this.name} now I'm ${this.age} years old`;
+      },
+    };
+
+    console.info(person.greet());
+  });
 });
