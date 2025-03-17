@@ -148,4 +148,19 @@ describe("Interface", () => {
     console.info(sayHello("John"));
     console.info(sayHello("John", "Doe"));
   });
+
+  it("should support function overlaoding", () => {
+    function A(a: number): number;
+    function A(a: string): string;
+    function A(a: any): any {
+      if (typeof a === "number") {
+        return a * 10;
+      } else {
+        return a;
+      }
+    }
+
+    expect(A(1)).toBe(10);
+    expect(A("Hello World")).toBe("Hello World");
+  });
 });
