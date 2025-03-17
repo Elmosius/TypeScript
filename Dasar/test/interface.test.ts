@@ -114,4 +114,38 @@ describe("Interface", () => {
     const person2: Person = person as Person;
     console.info(person2);
   });
+
+  it("should support default value", () => {
+    function sayHello(name: string = "Guest"): string {
+      return `Hello, my name is ${name}`;
+    }
+
+    console.info(sayHello());
+  });
+
+  it("should support rest parameter", () => {
+    function sum(...values: number[]): number {
+      let total = 0;
+
+      for (const value of values) {
+        total += value;
+      }
+      return total;
+    }
+
+    expect(sum(1, 2, 3)).toBe(6);
+  });
+
+  it("should support optional parameter", () => {
+    function sayHello(firstName: string, lastName?: string): string {
+      if (lastName) {
+        return `Hello, my name is ${firstName} ${lastName}`;
+      } else {
+        return `Hello, my name is ${firstName}`;
+      }
+    }
+
+    console.info(sayHello("John"));
+    console.info(sayHello("John", "Doe"));
+  });
 });
