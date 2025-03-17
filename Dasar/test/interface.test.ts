@@ -1,5 +1,6 @@
 import { Seller } from "../src/seller";
 import { Employee, Manager } from "../src/employee";
+import { Person } from "../src/person";
 
 describe("Interface", () => {
   it("should support in typescript", () => {
@@ -102,5 +103,15 @@ describe("Interface", () => {
     };
 
     console.info(c);
+  });
+
+  it("should support assertions", () => {
+    const person: any = {
+      name: "John Doe",
+      age: 30,
+    };
+
+    const person2: Person = person as Person;
+    console.info(person2);
   });
 });
