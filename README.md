@@ -3,6 +3,7 @@ Selamat datang di repositori saya! Di sini, Anda akan menemukan rekap belajar ma
 
 ## 📖 Materi
 - 📖 Basic
+- 🪨 OOP
 - ⚠️ Coming Soon
 
 Dalam repositori ini, Anda akan menemukan semua kode dan dokumen yang saya kerjakan selama proses belajar. Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi saya. Terima kasih telah mengunjungi repositori ini!
