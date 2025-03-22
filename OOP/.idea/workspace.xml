@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/test/overriding.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/overriding.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/visibility.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,7 @@
     "Jest.Overriding.should support overriding (1).executor": "Run",
     "Jest.Overriding.should support overriding.executor": "Run",
     "Jest.Super Constructor.should support super constructor.executor": "Run",
+    "Jest.Visibility.should support visibility (private, public, protected).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -57,7 +59,7 @@
     "nodejs.jest.jest_package": "C:/Suli File/Kuliah/Github/TypeScript/OOP/node_modules/jest",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Suli File\\Kuliah\\Github\\TypeScript\\OOP\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "C:\\Suli File\\Kuliah\\Github\\TypeScript\\OOP\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -67,20 +69,7 @@
       <recent name="C:\Suli File\Kuliah\Github\TypeScript\OOP\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Overriding.should support overriding (1)">
-    <configuration name="Interface.should support interface" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/interface.test.ts" />
-      <test-names>
-        <test-name value="Interface" />
-        <test-name value="should support interface" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.Visibility.should support visibility (private, public, protected)">
     <configuration name="Overriding" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -132,13 +121,26 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="Visibility.should support visibility (private, public, protected)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/visibility.test.ts" />
+      <test-names>
+        <test-name value="Visibility" />
+        <test-name value="should support visibility (private, public, protected)" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Visibility.should support visibility (private, public, protected)" />
         <item itemvalue="Jest.Overriding.should support overriding (1)" />
         <item itemvalue="Jest.Overriding" />
         <item itemvalue="Jest.Overriding.should support overriding" />
         <item itemvalue="Jest.Super Constructor.should support super constructor" />
-        <item itemvalue="Jest.Interface.should support interface" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +163,7 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="1962000" />
+      <workItem from="1742619092614" duration="3647000" />
     </task>
     <servers />
   </component>
