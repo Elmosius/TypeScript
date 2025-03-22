@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/instanceof.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/polymorphism.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/abstract.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +47,7 @@
     "Jest.Overriding.should support overriding (1).executor": "Run",
     "Jest.Overriding.should support overriding.executor": "Run",
     "Jest.Parameter Properties.executor": "Run",
+    "Jest.Polymorphism.should suport method polymorphism.executor": "Run",
     "Jest.Polymorphism.should work.executor": "Run",
     "Jest.Super Constructor.should support super constructor.executor": "Run",
     "Jest.Visibility.should support visibility (private, public, protected).executor": "Run",
@@ -75,7 +75,7 @@
       <recent name="C:\Suli File\Kuliah\Github\TypeScript\OOP\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Polymorphism.should suport method polymorphism">
+  <component name="RunManager" selected="Jest.abstract class.should work">
     <configuration name="Operator Instance Of.should have problem using typeof (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -83,19 +83,6 @@
       <envs />
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/test/instanceof.test.ts" />
-      <test-names>
-        <test-name value="Operator Instance Of" />
-        <test-name value="should have problem using typeof" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Operator Instance Of.should have problem using typeof" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/instanceof.ts" />
       <test-names>
         <test-name value="Operator Instance Of" />
         <test-name value="should have problem using typeof" />
@@ -141,13 +128,26 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="abstract class.should work" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/abstract.test.ts" />
+      <test-names>
+        <test-name value="abstract class" />
+        <test-name value="should work" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.abstract class.should work" />
         <item itemvalue="Jest.Polymorphism.should suport method polymorphism" />
         <item itemvalue="Jest.Polymorphism.should work" />
         <item itemvalue="Jest.Operator Instance Of.should no problem using instance of" />
         <item itemvalue="Jest.Operator Instance Of.should have problem using typeof (1)" />
-        <item itemvalue="Jest.Operator Instance Of.should have problem using typeof" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +170,7 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="4801000" />
+      <workItem from="1742619092614" duration="5601000" />
     </task>
     <servers />
   </component>
