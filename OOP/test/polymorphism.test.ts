@@ -8,7 +8,15 @@ describe("Polymorphism", () => {
   class VicePresident extends Manager {}
 
   function sayHello(employee: Employee): void {
-    console.info(employee.name);
+    if (employee instanceof VicePresident) {
+      const vp = employee as VicePresident;
+      console.info(`Hello Vice President ${vp.name}`);
+    } else if (employee instanceof Manager) {
+      const manager = employee as Manager;
+      console.info(`Hello Manager ${manager.name}`);
+    } else {
+      console.info(`Hello Employee ${employee.name}`);
+    }
   }
 
   it("should work", () => {
@@ -22,7 +30,7 @@ describe("Polymorphism", () => {
     console.info(employee);
   });
 
-  it("should suport method polymorphism", () => {
+  it("should support method polymorphism", () => {
     sayHello(new Employee("Budi"));
     sayHello(new Manager("Joko"));
     sayHello(new VicePresident("Dedi"));
