@@ -11,8 +11,12 @@ describe("Overriding", () => {
   }
 
   class Manager extends Employee {
+    // sayHello(name: string) {
+    //   return `Hello ${name}, my name is ${this.name}, I'm your Manager`;
+    // }
+
     sayHello(name: string) {
-      return `Hello ${name}, my name is ${this.name}, I'm your Manager`;
+      return `${super.sayHello(name)}, I'm your Manager`;
     }
   }
 

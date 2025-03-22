@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/overriding-test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/overriding.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/overriding.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,8 @@
     "Jest.Getter setter.should can be create class.executor": "Run",
     "Jest.Inheritance.should can be create inheritance.executor": "Run",
     "Jest.Interface.should support interface.executor": "Run",
+    "Jest.Overriding.executor": "Run",
+    "Jest.Overriding.should support overriding (1).executor": "Run",
     "Jest.Overriding.should support overriding.executor": "Run",
     "Jest.Super Constructor.should support super constructor.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -159,11 +161,23 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="1604000" />
+      <workItem from="1742619092614" duration="1962000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/super-constructor.test.ts</url>
+          <line>18</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
