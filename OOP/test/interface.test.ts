@@ -18,6 +18,7 @@ describe("Interface", () => {
       return `Hello ${name}, my name is ${this.name}`;
     }
   }
+
   it("should support interface", () => {
     const person = new Person("John Doe");
 
