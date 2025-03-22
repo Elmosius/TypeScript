@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/inheritance.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/interface.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/getter-setter.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/getter-setter.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/overriding-test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,9 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="2uRw72ciOa0PKqXL6Tey0pifkqx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,6 +39,8 @@
     "Jest.Getter setter.should can be create class.executor": "Run",
     "Jest.Inheritance.should can be create inheritance.executor": "Run",
     "Jest.Interface.should support interface.executor": "Run",
+    "Jest.Overriding.should support overriding.executor": "Run",
+    "Jest.Super Constructor.should support super constructor.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -63,33 +65,7 @@
       <recent name="C:\Suli File\Kuliah\Github\TypeScript\OOP\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Super Constructor.should support super constructor">
-    <configuration name="Getter setter.should can be create class" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/getter-setter.test.ts" />
-      <test-names>
-        <test-name value="Getter setter" />
-        <test-name value="should can be create class" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Inheritance.should can be create inheritance" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/inheritance.test.ts" />
-      <test-names>
-        <test-name value="Inheritance" />
-        <test-name value="should can be create inheritance" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.Overriding.should support overriding (1)">
     <configuration name="Interface.should support interface" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -100,6 +76,44 @@
       <test-names>
         <test-name value="Interface" />
         <test-name value="should support interface" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Overriding" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/overriding-test.ts" />
+      <test-names>
+        <test-name value="Overriding" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Overriding.should support overriding (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/overriding.test.ts" />
+      <test-names>
+        <test-name value="Overriding" />
+        <test-name value="should support overriding" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Overriding.should support overriding" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/overriding-test.ts" />
+      <test-names>
+        <test-name value="Overriding" />
+        <test-name value="should support overriding" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -118,10 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Overriding.should support overriding (1)" />
+        <item itemvalue="Jest.Overriding" />
+        <item itemvalue="Jest.Overriding.should support overriding" />
         <item itemvalue="Jest.Super Constructor.should support super constructor" />
         <item itemvalue="Jest.Interface.should support interface" />
-        <item itemvalue="Jest.Inheritance.should can be create inheritance" />
-        <item itemvalue="Jest.Getter setter.should can be create class" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +159,7 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="1083000" />
+      <workItem from="1742619092614" duration="1604000" />
     </task>
     <servers />
   </component>
