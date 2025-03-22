@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/abstract.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/static.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +48,11 @@
     "Jest.Parameter Properties.executor": "Run",
     "Jest.Polymorphism.should suport method polymorphism.executor": "Run",
     "Jest.Polymorphism.should work.executor": "Run",
+    "Jest.Static.should work on method too.executor": "Run",
+    "Jest.Static.should work.executor": "Run",
     "Jest.Super Constructor.should support super constructor.executor": "Run",
     "Jest.Visibility.should support visibility (private, public, protected).executor": "Run",
+    "Jest.abstract class.should work.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -75,33 +77,7 @@
       <recent name="C:\Suli File\Kuliah\Github\TypeScript\OOP\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.abstract class.should work">
-    <configuration name="Operator Instance Of.should have problem using typeof (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/instanceof.test.ts" />
-      <test-names>
-        <test-name value="Operator Instance Of" />
-        <test-name value="should have problem using typeof" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Operator Instance Of.should no problem using instance of" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/instanceof.test.ts" />
-      <test-names>
-        <test-name value="Operator Instance Of" />
-        <test-name value="should no problem using instance of" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.Static.should work on method too">
     <configuration name="Polymorphism.should suport method polymorphism" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -128,6 +104,32 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="Static.should work on method too" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/static.test.ts" />
+      <test-names>
+        <test-name value="Static" />
+        <test-name value="should work on method too" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Static.should work" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/static.test.ts" />
+      <test-names>
+        <test-name value="Static" />
+        <test-name value="should work" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="abstract class.should work" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -143,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Static.should work on method too" />
+        <item itemvalue="Jest.Static.should work" />
         <item itemvalue="Jest.abstract class.should work" />
         <item itemvalue="Jest.Polymorphism.should suport method polymorphism" />
         <item itemvalue="Jest.Polymorphism.should work" />
-        <item itemvalue="Jest.Operator Instance Of.should no problem using instance of" />
-        <item itemvalue="Jest.Operator Instance Of.should have problem using typeof (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +172,7 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="5601000" />
+      <workItem from="1742619092614" duration="6307000" />
     </task>
     <servers />
   </component>
