@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/getter-setter.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/inheritance.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/interface.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/getter-setter.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/getter-setter.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -27,6 +36,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Jest.Getter setter.should can be create class.executor": "Run",
+    "Jest.Inheritance.should can be create inheritance.executor": "Run",
+    "Jest.Interface.should support interface.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -38,6 +50,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "C:/Suli File/Kuliah/Github/TypeScript/OOP/node_modules/jest",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Suli File\\Kuliah\\Github\\TypeScript\\OOP\\node_modules\\prettier",
     "settings.editor.selected.configurable": "settings.javascript.prettier",
@@ -50,7 +63,7 @@
       <recent name="C:\Suli File\Kuliah\Github\TypeScript\OOP\test" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.Interface.should support interface">
     <configuration name="Getter setter.should can be create class" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -64,8 +77,36 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="Inheritance.should can be create inheritance" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/inheritance.test.ts" />
+      <test-names>
+        <test-name value="Inheritance" />
+        <test-name value="should can be create inheritance" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Interface.should support interface" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/test/interface.test.ts" />
+      <test-names>
+        <test-name value="Interface" />
+        <test-name value="should support interface" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Interface.should support interface" />
+        <item itemvalue="Jest.Inheritance.should can be create inheritance" />
         <item itemvalue="Jest.Getter setter.should can be create class" />
       </list>
     </recent_temporary>
@@ -89,7 +130,7 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="427000" />
+      <workItem from="1742619092614" duration="1083000" />
     </task>
     <servers />
   </component>

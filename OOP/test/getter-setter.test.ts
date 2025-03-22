@@ -17,7 +17,7 @@ describe("Getter setter", () => {
     }
   }
 
-  it("should can be create class", () => {
+  it("should can be create get set", () => {
     const category = new Category();
     category.name = "";
     console.info(category.name);
