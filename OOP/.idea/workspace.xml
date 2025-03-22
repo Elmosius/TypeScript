@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/static.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math-util.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/namespace.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +38,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Jest.Error Handling.should work.executor": "Run",
     "Jest.Getter setter.should can be create class.executor": "Run",
     "Jest.Inheritance.should can be create inheritance.executor": "Run",
     "Jest.Interface.should support interface.executor": "Run",
+    "Jest.NameSapce.executor": "Run",
     "Jest.Operator Instance Of.should have problem using typeof (1).executor": "Run",
     "Jest.Operator Instance Of.should have problem using typeof.executor": "Run",
     "Jest.Operator Instance Of.should no problem using instance of.executor": "Run",
@@ -77,30 +81,29 @@
       <recent name="C:\Suli File\Kuliah\Github\TypeScript\OOP\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Static.should work on method too">
-    <configuration name="Polymorphism.should suport method polymorphism" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.NameSapce">
+    <configuration name="Error Handling.should work" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/polymorphism.test.ts" />
+      <test-file value="$PROJECT_DIR$/test/errorhandling.test.ts" />
       <test-names>
-        <test-name value="Polymorphism" />
-        <test-name value="should suport method polymorphism" />
+        <test-name value="Error Handling" />
+        <test-name value="should work" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Polymorphism.should work" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="NameSapce" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/polymorphism.test.ts" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/namespace.test.ts" />
       <test-names>
-        <test-name value="Polymorphism" />
-        <test-name value="should work" />
+        <test-name value="NameSapce" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -145,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.NameSapce" />
+        <item itemvalue="Jest.Error Handling.should work" />
         <item itemvalue="Jest.Static.should work on method too" />
         <item itemvalue="Jest.Static.should work" />
         <item itemvalue="Jest.abstract class.should work" />
-        <item itemvalue="Jest.Polymorphism.should suport method polymorphism" />
-        <item itemvalue="Jest.Polymorphism.should work" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +175,7 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="6307000" />
+      <workItem from="1742619092614" duration="7005000" />
     </task>
     <servers />
   </component>
