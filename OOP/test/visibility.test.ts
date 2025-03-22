@@ -21,6 +21,7 @@ describe("Visibility", () => {
       this._count++;
     }
   }
+
   it("should support visibility (private, public, protected)", () => {
     const counter = new Counter();
     counter.increment();

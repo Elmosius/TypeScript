@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/visibility.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/parameter-properties.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/visibility.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/visibility.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +43,7 @@
     "Jest.Overriding.executor": "Run",
     "Jest.Overriding.should support overriding (1).executor": "Run",
     "Jest.Overriding.should support overriding.executor": "Run",
+    "Jest.Parameter Properties.executor": "Run",
     "Jest.Super Constructor.should support super constructor.executor": "Run",
     "Jest.Visibility.should support visibility (private, public, protected).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -69,7 +70,7 @@
       <recent name="C:\Suli File\Kuliah\Github\TypeScript\OOP\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Visibility.should support visibility (private, public, protected)">
+  <component name="RunManager" selected="Jest.Parameter Properties">
     <configuration name="Overriding" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -108,16 +109,15 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Super Constructor.should support super constructor" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Parameter Properties" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/super-constructor.test.ts" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/test/parameter-properties.test.ts" />
       <test-names>
-        <test-name value="Super Constructor" />
-        <test-name value="should support super constructor" />
+        <test-name value="Parameter Properties" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.Parameter Properties" />
         <item itemvalue="Jest.Visibility.should support visibility (private, public, protected)" />
         <item itemvalue="Jest.Overriding.should support overriding (1)" />
         <item itemvalue="Jest.Overriding" />
         <item itemvalue="Jest.Overriding.should support overriding" />
-        <item itemvalue="Jest.Super Constructor.should support super constructor" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +163,7 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="3647000" />
+      <workItem from="1742619092614" duration="3943000" />
     </task>
     <servers />
   </component>
