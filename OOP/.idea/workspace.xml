@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/math-util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/namespace.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9315e6fc-c61b-41d7-9f72-aed8e9b8cf3b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,7 +171,7 @@
       <workItem from="1742307371831" duration="121000" />
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
-      <workItem from="1742619092614" duration="7005000" />
+      <workItem from="1742619092614" duration="7127000" />
     </task>
     <servers />
   </component>
