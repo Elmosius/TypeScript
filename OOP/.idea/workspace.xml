@@ -31,47 +31,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Jest.Error Handling.should work.executor": "Run",
-    "Jest.Getter setter.should can be create class.executor": "Run",
-    "Jest.Inheritance.should can be create inheritance.executor": "Run",
-    "Jest.Interface.should support interface.executor": "Run",
-    "Jest.NameSapce.executor": "Run",
-    "Jest.Operator Instance Of.should have problem using typeof (1).executor": "Run",
-    "Jest.Operator Instance Of.should have problem using typeof.executor": "Run",
-    "Jest.Operator Instance Of.should no problem using instance of.executor": "Run",
-    "Jest.Overriding.executor": "Run",
-    "Jest.Overriding.should support overriding (1).executor": "Run",
-    "Jest.Overriding.should support overriding.executor": "Run",
-    "Jest.Parameter Properties.executor": "Run",
-    "Jest.Polymorphism.should suport method polymorphism.executor": "Run",
-    "Jest.Polymorphism.should work.executor": "Run",
-    "Jest.Static.should work on method too.executor": "Run",
-    "Jest.Static.should work.executor": "Run",
-    "Jest.Super Constructor.should support super constructor.executor": "Run",
-    "Jest.Visibility.should support visibility (private, public, protected).executor": "Run",
-    "Jest.abstract class.should work.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Suli File/Kuliah/Github/TypeScript/OOP/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "C:/Suli File/Kuliah/Github/TypeScript/OOP/node_modules/jest",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Suli File\\Kuliah\\Github\\TypeScript\\OOP\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "ts.external.directory.path": "C:\\Suli File\\Kuliah\\Github\\TypeScript\\OOP\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Jest.Error Handling.should work.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Getter setter.should can be create class.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Inheritance.should can be create inheritance.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Interface.should support interface.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.NameSapce.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Operator Instance Of.should have problem using typeof (1).executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Operator Instance Of.should have problem using typeof.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Operator Instance Of.should no problem using instance of.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Overriding.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Overriding.should support overriding (1).executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Overriding.should support overriding.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Parameter Properties.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Polymorphism.should suport method polymorphism.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Polymorphism.should work.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Static.should work on method too.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Static.should work.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Super Constructor.should support super constructor.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Visibility.should support visibility (private, public, protected).executor&quot;: &quot;Run&quot;,
+    &quot;Jest.abstract class.should work.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Suli File/Kuliah/Github/TypeScript/OOP/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;C:/Suli File/Kuliah/Github/TypeScript/OOP/node_modules/jest&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Suli File\\Kuliah\\Github\\TypeScript\\OOP\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Suli File\\Kuliah\\Github\\TypeScript\\OOP\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Suli File\Kuliah\Github\TypeScript\OOP\test" />
@@ -172,6 +172,7 @@
       <workItem from="1742559753220" duration="99000" />
       <workItem from="1742559874164" duration="632000" />
       <workItem from="1742619092614" duration="7127000" />
+      <workItem from="1742961862865" duration="2000" />
     </task>
     <servers />
   </component>
@@ -184,7 +185,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/test/super-constructor.test.ts</url>
           <line>18</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
