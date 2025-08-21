@@ -1,6 +1,7 @@
 import { fetchAPI } from "../utils/fetch.ts";
 import { getLocalStorage } from "../utils/storage.ts";
 import { environment } from "../../constants/environment.ts";
+import type { IOrder } from "../types/order.ts";
 
 export const getOrders = async (
   page?: string,
@@ -45,5 +46,15 @@ export const getOrderDetail = async (id: string) => {
     headers: {
       Authorization: `Bearer ${getLocalStorage("auth")}`,
     },
+  });
+};
+
+export const createOrder = async (payload: IOrder) => {
+  return await fetchAPI(`${environment.API_URL}/orders`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${getLocalStorage("auth")}`,
+    },
+    body: JSON.stringify(payload),
   });
 };

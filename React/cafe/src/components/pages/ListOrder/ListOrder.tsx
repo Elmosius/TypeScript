@@ -1,10 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import { getOrders, updateOrderStatus } from "../../services/order.service.ts";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../../ui/Button";
 import type { IOrder } from "../../types/order.ts";
+import { removeLocalStorage } from "../../utils/storage.ts";
 
 const ListOrder = () => {
+  const navigate = useNavigate();
+
   const { data, isLoading, isError, refetch } = useQuery({
     queryKey: ["order"],
     queryFn: () => getOrders(),
@@ -15,18 +18,21 @@ const ListOrder = () => {
     await refetch();
   };
 
-  console.info(data?.data);
+  const handleLogout = async () => {
+    removeLocalStorage("auth");
+    await navigate("/login", { replace: true });
+  };
 
   return (
     <main className={"p-4"}>
       <header className={"flex justify-between items-center mb-10"}>
         <h1 className={"text-center text-2xl font-semibold "}>List Order</h1>
         <div className={"flex gap-2"}>
-          <Link to={"/create"}>
+          <Link to={"/orders/create"}>
             <Button type={"button"}>Create Order</Button>
           </Link>
 
-          <Button type={"button"} color={"secondary"}>
+          <Button type={"button"} color={"secondary"} onClick={handleLogout}>
             Logout
           </Button>
         </div>

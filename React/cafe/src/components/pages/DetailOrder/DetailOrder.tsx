@@ -7,7 +7,7 @@ import type { ICart } from "../../types/order.ts";
 const DetailOrder = () => {
   const { id } = useParams();
 
-  const { data, isLoading, isError, refetch } = useQuery({
+  const { data, isLoading, isError } = useQuery({
     queryKey: ["order", id],
     queryFn: async () => await getOrderDetail(id as string),
   });
