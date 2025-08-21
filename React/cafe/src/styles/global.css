@@ -13,7 +13,6 @@
   button {
     @apply cursor-pointer;
     @apply focus:outline-none;
-    @apply border-none;
     @apply bg-none;
   }
 
@@ -38,4 +37,6 @@
     @apply block;
     @apply max-w-full;
   }
+
+
 }

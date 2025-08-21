@@ -11,7 +11,7 @@ interface PropTypes {
 const Button = (props: PropTypes) => {
   const colors = {
     primary: "bg-black border border-black text-white",
-    secondary: "bg-white border border-white text-black",
+    secondary: "bg-white border border-black text-black",
   };
   const {
     type = "button",
