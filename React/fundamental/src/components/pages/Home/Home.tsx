@@ -1,6 +1,7 @@
 import Button from "../../ui/Button";
 import { useEffect, useState } from "react";
 import Input from "../../ui/Input";
+import { useQuery } from "@tanstack/react-query";
 
 // const makanan: { nama: string; harga: number }[] = [
 //   {
@@ -22,13 +23,14 @@ const Home = () => {
 
   const [darkmode, setDarkmode] = useState<boolean>(false);
   const [inputSearch, setInputSearch] = useState<string>("");
-  const [menu, setMenu] = useState([]);
 
-  useEffect(() => {
-    fetch("https://wpu-cafe.vercel.app/api/menu")
-      .then((response) => response.json())
-      .then((result) => setMenu(result.data));
-  }, []);
+  const { data, isLoading } = useQuery({
+    queryKey: ["menu"],
+    queryFn: async () =>
+      await fetch("https://wpu-cafe.vercel.app/api/menu").then((response) =>
+        response.json(),
+      ),
+  });
 
   function handleClick(): void {
     console.log("Button clicked");
@@ -59,7 +61,8 @@ const Home = () => {
 
       {showButton && <Button type={"button"}>Click Me</Button>}
 
-      {menu.map((item: { name: string; price: number }, index) => (
+      {isLoading && <p>Loading...</p>}
+      {data?.data.map((item: { name: string; price: number }, index) => (
         <div key={index}>
           <h2>{item.name}</h2>
           <p>Harga: {item.price}</p>
