@@ -38,3 +38,12 @@ export const updateOrderStatus = async (
     body: JSON.stringify(payload),
   });
 };
+
+export const getOrderDetail = async (id: string) => {
+  return await fetchAPI(`${environment.API_URL}/orders/${id}`, {
+    method: "GET",
+    headers: {
+      Authorization: `Bearer ${getLocalStorage("auth")}`,
+    },
+  });
+};

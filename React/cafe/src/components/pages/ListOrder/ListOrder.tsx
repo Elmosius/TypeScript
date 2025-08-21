@@ -58,12 +58,17 @@ const ListOrder = () => {
                   <td>{item.total}</td>
                   <td>{item.status}</td>
                   <td className={"flex gap-1 justify-center mb-2"}>
-                    <Link to={`/order/${item.id}`}>
+                    <Link to={`/orders/${item.id}`}>
                       <Button type={"button"}>Detail</Button>
                     </Link>
 
                     {item.status === "PROCESSING" && (
-                      <Button type={"button"} onClick={() => {}}>
+                      <Button
+                        type={"button"}
+                        onClick={async () => {
+                          await handleUpdate(item.id);
+                        }}
+                      >
                         Completed
                       </Button>
                     )}
