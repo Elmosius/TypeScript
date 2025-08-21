@@ -1,34 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 @layer base {
-    :root{
-        font-family: 'Roboto', sans-serif;
-    }
+  :root {
+    font-family: "Roboto", sans-serif;
+  }
 
-    a{
-        @apply no-underline;
-    }
+  a {
+    @apply no-underline;
+  }
 
-    button{
-        @apply cursor-pointer;
-        @apply focus:outline-none;
-        @apply border-none;
-        @apply bg-none;
-    }
+  button {
+    @apply cursor-pointer;
+    @apply focus:outline-none;
+    @apply border-none;
+    @apply bg-none;
+  }
 
-    p{
-        @apply wrap-break-word;
-    }
+  p {
+    @apply wrap-break-word;
+  }
 
-    h1,h2,h3,h4,h5,h6{
-        @apply wrap-break-word
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply wrap-break-word;
+  }
 
-    img,picture,video,canvas,svg{
-        @apply block;
-        @apply max-w-full;
-    }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    @apply block;
+    @apply max-w-full;
+  }
 }
-
-
