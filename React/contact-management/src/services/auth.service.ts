@@ -10,3 +10,14 @@ export const login = async (payload: {
     body: JSON.stringify(payload),
   });
 };
+
+export const register = async (payload: {
+  username: string;
+  password: string;
+  name: string;
+}) => {
+  return fetchAPI(`${environment.API_URL}/users`, {
+    method: "POST",
+    body: JSON.stringify(payload),
+  });
+};
