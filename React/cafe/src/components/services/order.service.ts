@@ -12,12 +12,12 @@ export const getOrders = async (
   sortOrder?: string,
 ) => {
   let url = `${environment.API_URL}/orders`;
-  if (page) url.concat(`?page=${page}`);
-  if (pageSize) url.concat(`&pageSize=${pageSize}`);
-  if (search) url.concat(`&search=${search}`);
-  if (status) url.concat(`&status=${status}`);
-  if (sortBy) url.concat(`&sortBy=${sortBy}`);
-  if (sortOrder) url.concat(`&sortOrder=${sortOrder}`);
+  if (page) url += `?page=${page}`;
+  if (pageSize) url += `&pageSize=${pageSize}`;
+  if (search) url += `&search=${search}`;
+  if (status) url += `&status=${status}`;
+  if (sortBy) url += `&sortBy=${sortBy}`;
+  if (sortOrder) url += `&sortOrder=${sortOrder}`;
 
   return await fetchAPI(url, {
     method: "GET",
