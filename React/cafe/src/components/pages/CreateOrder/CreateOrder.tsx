@@ -61,7 +61,7 @@ const CreateOrder = () => {
       customerName: formData.nameCustomer.value,
       tableNumber: formData.tableNumber.value,
       cart: cart.map((item: ICart) => ({
-        menuId: item.menuId,
+        menuItemId: item.menuId,
         quantity: item.quantity,
       })),
     };
