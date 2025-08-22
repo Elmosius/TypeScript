@@ -1,8 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import type { FormEvent } from "react";
-import { login } from "../../services/auth.service.ts";
-import { alertError, alertSuccess } from "../../utils/alert.ts";
-import { setLocalStorage } from "../../utils/storage.ts";
+import { login } from "../../../services/auth.service.ts";
+import { alertError, alertSuccess } from "../../../utils/alert.ts";
+import { setLocalStorage } from "../../../utils/storage.ts";
 
 const Login = () => {
   const navigate = useNavigate();

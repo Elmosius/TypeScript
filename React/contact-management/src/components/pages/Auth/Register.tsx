@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import type { FormEvent } from "react";
-import { register } from "../../services/auth.service.ts";
-import { alertError, alertSuccess } from "../../utils/alert.ts";
+import { register } from "../../../services/auth.service.ts";
+import { alertError, alertSuccess } from "../../../utils/alert.ts";
 
 const Register = () => {
   const navigate = useNavigate();
