@@ -1,7 +1,7 @@
 import { fetchAPI } from "../utils/fetch.ts";
 import { getLocalStorage } from "../utils/storage.ts";
 import { environment } from "../../constants/environment.ts";
-import type { IOrder } from "../types/order.ts";
+import type { ICart, IOrder } from "../types/order.ts";
 
 export const getOrders = async (
   page?: string,
@@ -49,7 +49,11 @@ export const getOrderDetail = async (id: string) => {
   });
 };
 
-export const createOrder = async (payload: IOrder) => {
+export const createOrder = async (payload: {
+  customerName: string;
+  tableNumber: number;
+  cart: ICart[];
+}) => {
   return await fetchAPI(`${environment.API_URL}/orders`, {
     method: "POST",
     headers: {
