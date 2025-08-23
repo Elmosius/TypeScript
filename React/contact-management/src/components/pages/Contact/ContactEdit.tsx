@@ -1,10 +1,20 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import {
+  getContactById,
+  updateContact,
+} from "../../../services/contact.service.ts";
 import type { FormEvent } from "react";
-import { createContact } from "../../../services/contact.service.ts";
 import { alertError, alertSuccess } from "../../../utils/alert.ts";
 
-const ContactCreate = () => {
+const ContactEdit = () => {
+  const { id } = useParams();
   const navigate = useNavigate();
+
+  const { data } = useQuery({
+    queryKey: ["contact", id],
+    queryFn: async () => getContactById(String(id)),
+  });
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -16,13 +26,12 @@ const ContactCreate = () => {
       phone: formData.phone.value,
     };
 
-    const result = await createContact(payload);
-
+    const result = await updateContact(String(id), payload);
     if (result.data) {
-      await alertSuccess("Create contact success");
+      await alertSuccess("Update contact success");
       navigate("/");
     } else {
-      await alertError("Create contact failed");
+      await alertError("Update contact failed");
     }
   };
 
@@ -36,8 +45,7 @@ const ContactCreate = () => {
           <i className="fas fa-arrow-left mr-2"></i> Back to Contacts
         </Link>
         <h1 className="text-2xl font-bold text-white flex items-center">
-          <i className="fas fa-user-plus text-blue-400 mr-3"></i> Create New
-          Contact
+          <i className="fas fa-user-edit text-blue-400 mr-3"></i> Edit Contact
         </h1>
       </div>
 
@@ -62,6 +70,7 @@ const ContactCreate = () => {
                     name="first_name"
                     className="w-full pl-10 pr-3 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
                     placeholder="Enter first name"
+                    defaultValue={data?.first_name}
                     required
                   />
                 </div>
@@ -83,6 +92,7 @@ const ContactCreate = () => {
                     name="last_name"
                     className="w-full pl-10 pr-3 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
                     placeholder="Enter last name"
+                    defaultValue={data?.last_name}
                     required
                   />
                 </div>
@@ -106,6 +116,7 @@ const ContactCreate = () => {
                   name="email"
                   className="w-full pl-10 pr-3 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
                   placeholder="Enter email address"
+                  defaultValue={data?.email}
                   required
                 />
               </div>
@@ -128,23 +139,24 @@ const ContactCreate = () => {
                   name="phone"
                   className="w-full pl-10 pr-3 py-3 bg-gray-700 bg-opacity-50 border border-gray-600 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200"
                   placeholder="Enter phone number"
+                  defaultValue={data?.phone}
                   required
                 />
               </div>
             </div>
 
             <div className="flex justify-end space-x-4">
-              <a
-                href="dashboard.html"
+              <Link
+                to={"/"}
                 className="px-5 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-all duration-200 flex items-center shadow-md"
               >
                 <i className="fas fa-times mr-2"></i> Cancel
-              </a>
+              </Link>
               <button
                 type="submit"
                 className="px-5 py-3 bg-gradient text-white rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-all duration-200 font-medium shadow-lg transform hover:-translate-y-0.5 flex items-center"
               >
-                <i className="fas fa-plus-circle mr-2"></i> Create Contact
+                <i className="fas fa-save mr-2"></i> Save Changes
               </button>
             </div>
           </form>
@@ -154,4 +166,4 @@ const ContactCreate = () => {
   );
 };
 
-export default ContactCreate;
+export default ContactEdit;

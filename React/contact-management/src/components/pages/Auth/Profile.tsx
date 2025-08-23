@@ -47,7 +47,7 @@ const Profile = () => {
   };
 
   return (
-    <main className="container mx-auto px-4 py-8 flex-grow">
+    <>
       <div className="flex items-center mb-6">
         <i className="fas fa-user-cog text-blue-400 text-2xl mr-3" />
         <h1 className="text-2xl font-bold text-white">My Profile</h1>
@@ -162,11 +162,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      {/* Footer */}
-      <div className="mt-10 mb-6 text-center text-gray-400 text-sm animate-fade-in">
-        <p>© 2025 Contact Management. All rights reserved.</p>
-      </div>
-    </main>
+    </>
   );
 };
 

@@ -48,7 +48,13 @@ const Dashboard = () => {
         </div>
       </header>
       <div className="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen flex flex-col">
-        <Outlet />
+        <main className="container mx-auto px-4 py-8 flex-grow">
+          <Outlet />
+
+          <div className="mt-10 mb-6 text-center text-gray-400 text-sm animate-fade-in">
+            <p>© 2025 Contact Management. All rights reserved.</p>
+          </div>
+        </main>
       </div>
     </>
   );

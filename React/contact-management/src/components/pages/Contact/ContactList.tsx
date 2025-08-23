@@ -1,8 +1,16 @@
 import { Link, useSearchParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { getContacts } from "../../../services/contact.service.ts";
+import {
+  deleteContact,
+  getContacts,
+} from "../../../services/contact.service.ts";
 import type { IContact } from "../../../types/contact.ts";
 import type { FormEvent } from "react";
+import {
+  alertConfirm,
+  alertError,
+  alertSuccess,
+} from "../../../utils/alert.ts";
 
 const ContactList = () => {
   const [params, setParams] = useSearchParams();
@@ -11,7 +19,7 @@ const ContactList = () => {
   const email = params.get("search_email") || "";
   const phone = params.get("search_phone") || "";
 
-  const { data } = useQuery({
+  const { data, refetch } = useQuery({
     queryKey: ["contacts", name, email, phone, page],
     queryFn: async () => await getContacts(name, email, phone, page),
   });
@@ -32,8 +40,21 @@ const ContactList = () => {
     setParams(params);
   };
 
+  const handleDelete = async (id: string) => {
+    if (!(await alertConfirm("Are you sure you want to delete this contact?")))
+      return;
+
+    const result = await deleteContact(id);
+    if (result.data === "OK") {
+      await alertSuccess("Delete contact success");
+      await refetch();
+    } else {
+      await alertError("Delete contact failed");
+    }
+  };
+
   return (
-    <main className="container mx-auto px-4 py-8 flex-grow">
+    <>
       <div className="flex items-center mb-6">
         <i className="fas fa-users text-blue-400 text-2xl mr-3" />
         <h1 className="text-2xl font-bold text-white">My Contacts</h1>
@@ -192,12 +213,15 @@ const ContactList = () => {
               </Link>
               <div className="mt-4 flex justify-end space-x-3">
                 <Link
-                  to={`/dashboard/contact/edit/${contact.id}`}
+                  to={`/dashboard/contacts/edit/${contact.id}`}
                   className="px-4 py-2 bg-gradient text-white rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-all duration-200 font-medium shadow-md flex items-center"
                 >
                   <i className="fas fa-edit mr-2" /> Edit
                 </Link>
-                <button className="px-4 py-2 bg-gradient-to-r from-red-600 to-red-500 text-white rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-all duration-200 font-medium shadow-md flex items-center">
+                <button
+                  onClick={() => handleDelete(String(contact.id))}
+                  className="px-4 py-2 bg-gradient-to-r from-red-600 to-red-500 text-white rounded-lg hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-all duration-200 font-medium shadow-md flex items-center"
+                >
                   <i className="fas fa-trash-alt mr-2" /> Delete
                 </button>
               </div>
@@ -248,11 +272,7 @@ const ContactList = () => {
             ))}
         </nav>
       </div>
-      {/* Footer */}
-      <div className="mt-10 mb-6 text-center text-gray-400 text-sm animate-fade-in">
-        <p>© 2025 Contact Management. All rights reserved.</p>
-      </div>
-    </main>
+    </>
   );
 };
 export default ContactList;
