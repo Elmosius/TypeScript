@@ -1,0 +1,26 @@
+import { environment } from "../constans/environments.ts";
+import { fetchAPI } from "../utils/fetch.ts";
+import { getLocalStorage } from "../utils/storage.ts";
+
+export const getContacts = async (
+  name?: string,
+  email?: string,
+  phone?: string,
+  page?: string,
+  size?: string,
+) => {
+  const link = new URL(`${environment.API_URL}/contacts`);
+
+  if (name) link.searchParams.append("name", name);
+  if (email) link.searchParams.append("email", email);
+  if (phone) link.searchParams.append("phone", phone);
+  if (page) link.searchParams.append("page", page);
+  if (size) link.searchParams.append("size", size);
+
+  return await fetchAPI(link, {
+    method: "GET",
+    headers: {
+      Authorization: getLocalStorage("token"),
+    },
+  });
+};

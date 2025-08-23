@@ -1,4 +1,4 @@
-export const fetchAPI = async (url: string, options: RequestInit) => {
+export const fetchAPI = async (url: string | URL, options: RequestInit) => {
   const response = await fetch(url, {
     ...options,
   });
