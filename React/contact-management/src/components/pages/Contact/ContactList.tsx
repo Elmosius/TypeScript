@@ -177,7 +177,7 @@ const ContactList = () => {
           >
             <div className="p-6">
               <Link
-                to={`/dashboard/contact/detail/${contact.id}`}
+                to={`/dashboard/contacts/detail/${contact.id}`}
                 className="block cursor-pointer hover:bg-gray-700 rounded-lg transition-all duration-200 p-3"
               >
                 <div className="flex items-center mb-3">

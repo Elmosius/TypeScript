@@ -8,6 +8,7 @@ import Profile from "../components/pages/Auth/Profile.tsx";
 import ContactCreate from "../components/pages/Contact/ContactCreate.tsx";
 import ProtectedRoute from "./ProtectedRoutes.tsx";
 import ContactEdit from "../components/pages/Contact/ContactEdit.tsx";
+import ContactDetail from "../components/pages/Contact/ContactDetail.tsx";
 
 const routes: RouteObject[] = [
   {
@@ -62,6 +63,10 @@ const routes: RouteObject[] = [
       {
         path: "/dashboard/contacts/edit/:id",
         element: <ContactEdit />,
+      },
+      {
+        path: "/dashboard/contacts/detail/:id",
+        element: <ContactDetail />,
       },
     ],
   },
