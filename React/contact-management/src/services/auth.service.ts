@@ -62,7 +62,7 @@ export const getCurrentUser = async () => {
 
 export const logout = async () => {
   return fetchAPI(`${environment.API_URL}/users/logout`, {
-    method: "POST",
+    method: "DELETE",
     headers: {
       Authorization: getLocalStorage("token"),
     },

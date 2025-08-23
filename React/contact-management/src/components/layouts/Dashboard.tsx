@@ -1,6 +1,15 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import { logout } from "../../services/auth.service.ts";
+import { removeLocalStorage } from "../../utils/storage.ts";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    await logout();
+    removeLocalStorage("token");
+    navigate("/auth/login", { replace: true });
+  };
+
   return (
     <>
       <header className="bg-gradient shadow-lg">
@@ -26,7 +35,10 @@ const Dashboard = () => {
                 </Link>
               </li>
               <li>
-                <button className="text-gray-100 hover:text-white flex items-center transition-colors duration-200 cursor-pointer">
+                <button
+                  onClick={handleLogout}
+                  className="text-gray-100 hover:text-white flex items-center transition-colors duration-200 cursor-pointer"
+                >
                   <i className="fas fa-sign-out-alt mr-2" />
                   <span>Logout</span>
                 </button>
