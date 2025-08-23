@@ -15,12 +15,11 @@ const Login = () => {
     };
 
     const result = await login(payload);
-    console.log(result.data);
 
     if (result.data.token) {
       await alertSuccess("Login success");
       setLocalStorage("token", result.data.token);
-      navigate("/dashboard", { replace: true });
+      navigate("/dashboard/contacts", { replace: true });
     } else {
       await alertError("Password or username is incorrect");
     }
