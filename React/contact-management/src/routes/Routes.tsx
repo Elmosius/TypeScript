@@ -5,6 +5,7 @@ import Register from "../components/pages/Auth/Register.tsx";
 import Dashboard from "../components/layouts/Dashboard.tsx";
 import ContactList from "../components/pages/Contact/ContactList.tsx";
 import Profile from "../components/pages/Auth/Profile.tsx";
+import ContactCreate from "../components/pages/Contact/ContactCreate.tsx";
 
 const routes: RouteObject[] = [
   {
@@ -35,6 +36,10 @@ const routes: RouteObject[] = [
       {
         path: "/dashboard/profile",
         element: <Profile />,
+      },
+      {
+        path: "/dashboard/contacts/create",
+        element: <ContactCreate />,
       },
     ],
   },

@@ -135,7 +135,7 @@ const ContactList = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {/* Create New Contact Card */}
         <div className="bg-gray-800 bg-opacity-80 rounded-xl shadow-custom overflow-hidden border-2 border-dashed border-gray-700 card-hover animate-fade-in">
-          <a href="create_contact.html" className="block p-6 h-full">
+          <Link to={"/dashboard/contacts/create"} className="block p-6 h-full">
             <div className="flex flex-col items-center justify-center h-full text-center">
               <div className="w-20 h-20 bg-gradient rounded-full flex items-center justify-center mb-5 shadow-lg transform transition-transform duration-300 hover:scale-110">
                 <i className="fas fa-user-plus text-3xl text-white" />
@@ -145,7 +145,7 @@ const ContactList = () => {
               </h2>
               <p className="text-gray-300">Add a new contact to your list</p>
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Contact Card 1 */}

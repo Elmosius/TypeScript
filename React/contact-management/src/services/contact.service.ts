@@ -24,3 +24,14 @@ export const getContacts = async (
     },
   });
 };
+
+export const createContact = async (payload: Record<string, string>) => {
+  return await fetchAPI(`${environment.API_URL}/contacts`, {
+    method: "POST",
+    headers: {
+      Authorization: getLocalStorage("token"),
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+};
